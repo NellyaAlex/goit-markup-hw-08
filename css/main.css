@@ -681,28 +681,53 @@ img {
 }
 
 .clients-title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--main-title-color);
 }
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+  }
+}
 
 .clients-img {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
   justify-content: center;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .clients-img {
+    margin-top: 50px;
+  }
+}
 
 .clients-img-item {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 92px;
   transition: border-color var(--duration) var(--cubic);
+}
+@media screen and (max-width: 767px) {
+  .clients-img-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-img-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-img-item {
+    width: 170px;
+  }
 }
 .clients-img-item:hover, .clients-img-item:focus {
   border-color: var(--accent-color);
@@ -737,6 +762,18 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-contacts,
+.footer-list,
+.footer-join,
+.footer-signup,
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .footer-logo,
 .footer-logo-white {
   font-family: "Raleway", sans-serif;
@@ -758,8 +795,15 @@ img {
   margin-top: 20px;
 }
 
-.footer-item:not(:first-child) {
-  margin-top: 9px;
+@media screen and (max-width: 1199px) {
+  .footer-item:not(:first-child) {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-item:not(:first-child) {
+    margin-top: 9px;
+  }
 }
 
 .footer-adr,
@@ -777,13 +821,38 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 767px) {
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+  }
 }
 
-.footer-join {
-  margin-left: 70px;
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: center;
+    gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-join {
+    margin-top: 60px;
+  }
 }
 
 .footer-action {
@@ -798,8 +867,12 @@ img {
 
 .footer-soc {
   display: flex;
-  justify-content: center;
   gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc {
+    justify-content: center;
+  }
 }
 
 .footer-soc-link {
@@ -833,13 +906,19 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-signup {
-  width: calc(50% - 15px);
-  margin-left: auto;
+@media screen and (max-width: 1199px) {
+  .footer-signup {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-signup {
+    width: calc(50% - 15px);
+    margin-left: auto;
+  }
 }
 
 .footer-input {
-  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -852,6 +931,22 @@ img {
   transition: border-color var(--duration) var(--cubic), box-shadow var(--duration) var(--cubic);
   cursor: pointer;
 }
+@media screen and (max-width: 1199px) {
+  .footer-input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 449px) {
+  .footer-input {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 100%;
+  }
+}
 .footer-input:hover {
   border-color: var(--accent-color);
 }
@@ -860,9 +955,11 @@ img {
   box-shadow: 0px 0px 0px 1px whitesmoke;
 }
 
-.footer-form {
-  display: flex;
-  gap: 12px;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .footer-form > .primary-btn {
@@ -875,7 +972,7 @@ img {
   justify-content: center;
   gap: 10px;
   margin: 0 auto;
-  min-width: 200px;
+  width: 200px;
 }
 
 .send-icon {
@@ -884,9 +981,18 @@ img {
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filter-list {
+    max-width: 326px;
+  }
 }
 
 .filter-btn {
@@ -910,15 +1016,39 @@ img {
 }
 
 .filter-cards {
-  margin-top: 34px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 767px) {
+  .filter-cards {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter-cards {
+    margin-top: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-cards {
+    margin-top: 34px;
+  }
+}
 
 .filter-item {
   background-color: var(--main-bg-color);
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .filter-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .filter-link {

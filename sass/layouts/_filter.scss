@@ -1,7 +1,15 @@
 .filter-list {
   display: flex;
-  justify-content: center;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  @include tablet {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 326px;
+  }
+
+  gap: 8px;
 }
 
 .filter-btn {
@@ -11,6 +19,7 @@
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+
   background-color: var(--third-bg-color);
   border-color: transparent;
   border-radius: 4px;
@@ -29,7 +38,17 @@
 }
 
 .filter-cards {
-  margin-top: 34px;
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+  }
+
+  @include tablet {
+    margin-top: 14px;
+  }
+
+  @include desktop {
+    margin-top: 34px;
+  }
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -37,7 +56,15 @@
 
 .filter-item {
   background-color: var(--main-bg-color);
-  width: calc((100% - 60px) / 3);
+  // width: calc((100% - 60px) / 3);
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .filter-link {
