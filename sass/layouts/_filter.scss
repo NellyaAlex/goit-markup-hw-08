@@ -1,12 +1,13 @@
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  @include tablet {
-    justify-content: center;
-  }
 
   @media screen and (max-width: 767px) {
     max-width: 326px;
+  }
+
+  @include tablet {
+    justify-content: center;
   }
 
   gap: 8px;

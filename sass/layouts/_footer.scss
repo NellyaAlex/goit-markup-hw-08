@@ -178,14 +178,11 @@
   outline: none;
   transition: border-color var(--duration) var(--cubic), box-shadow var(--duration) var(--cubic);
   cursor: pointer;
+  width: 320px;
 
-  @media screen and (max-width: 1199px) {
+  @include mobile {
     width: 450px;
     margin-bottom: 20px;
-  }
-
-  @media screen and (max-width: 449px) {
-    width: 320px;
   }
 
   @include desktop {

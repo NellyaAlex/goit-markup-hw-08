@@ -64,14 +64,14 @@
     </header> -->
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn pointer btn" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="features section">
         <div class="container">
@@ -130,15 +130,30 @@
           <h2 class="business__title">Чим ми займаємося</h2>
           <ul class="activities-list list">
             <li class="activities-list__item">
-              <img src="./images/comp1.jpg" alt="комп'ютер" width="370" />
+              <img
+                srcset="./images/comp1-desktop-1x.jpg 1x, ./images/comp1-desktop-2x.jpg 2x"
+                src="./images/comp1-desktop-1x.jpg"
+                alt="комп'ютер"
+                width="370"
+              />
               <p class="activities-list__text">Десктопні додатки</p>
             </li>
             <li class="activities-list__item">
-              <img src="./images/comp2.jpg" alt="комп'ютер та мобильній" width="370" />
+              <img
+                srcset="./images/comp2-desktop-1x.jpg 1x, ./images/comp2-desktop-2x.jpg 2x"
+                src="./images/comp2-desktop-1x.jpg"
+                alt="комп'ютер та мобильній"
+                width="370"
+              />
               <p class="activities-list__text">Мобільні додатки</p>
             </li>
             <li class="activities-list__item">
-              <img src="./images/comp3.jpg" alt="комп'ютер та планшет" width="370" />
+              <img
+                srcset="./images/comp3-desktop-1x.jpg 1x, ./images/comp3-desktop-2x.jpg 2x"
+                src="./images/comp3-desktop-1x.jpg"
+                alt="комп'ютер та планшет"
+                width="370"
+              />
               <p class="activities-list__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -150,7 +165,21 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="./images/team1.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team1-desktop-1x.jpg 1x, ./images/team1-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team1-tablet-1x.jpg 1x, ./images/team1-tablet-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team1-mobile-1x.jpg 1x, ./images/team1-mobile-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="./images/team1-mobile-1x.jpg" alt="Ігор Дем'яненко" width="450" />
+              </picture>
               <div class="team-list__wrap">
                 <h3 class="team-list__subtitle">Ігор Дем'яненко</h3>
                 <p class="team-list__text">Product Designer</p>
@@ -188,7 +217,21 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/team2.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team2-desktop-1x.jpg 1x, ./images/team2-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team2-tablet-1x.jpg 1x, ./images/team2-tablet-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team2-mobile-1x.jpg 1x, ./images/team2-mobile-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="./images/team2-mobile-1x.jpg" alt="Ольга Рєпіна" width="450" />
+              </picture>
               <div class="team-list__wrap">
                 <h3 class="team-list__subtitle">Ольга Рєпіна</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -226,7 +269,21 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/team3.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team3-desktop-1x.jpg 1x, ./images/team3-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team3-tablet-1x.jpg 1x, ./images/team3-tablet-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team3-mobile-1x.jpg 1x, ./images/team3-mobile-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="./images/team3-mobile-1x.jpg" alt="Микола Тарасов" width="450" />
+              </picture>
               <div class="team-list__wrap">
                 <h3 class="team-list__subtitle">Микола Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -264,7 +321,21 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/team4.jpg" alt="Михаїл Єрмаков" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team4-desktop-1x.jpg 1x, ./images/team4-desktop-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/team4-tablet-1x.jpg 1x, ./images/team4-tablet-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/team4-mobile-1x.jpg 1x, ./images/team4-mobile-2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="./images/team4-mobile-1x.jpg" alt="Михаїл Єрмаков" width="450" />
+              </picture>
               <div class="team-list__wrap">
                 <h3 class="team-list__subtitle">Михайло Єрмаков</h3>
                 <p class="team-list__text">UI Designer</p>
