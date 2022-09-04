@@ -42,6 +42,8 @@ img {
 .footer-adr:hover,
 .footer-contact:hover,
 .footer-adr:focus,
-.footer-contact:focus {
+.footer-contact:focus,
+.mob-menu-navigation__link:hover,
+.mob-menu-navigation__link:focus {
   color: var(--accent-color);
 }
