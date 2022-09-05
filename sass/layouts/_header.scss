@@ -29,17 +29,31 @@
 }
 
 .navigation__list,
-.contact__item,
 .header__contact {
   display: flex;
   margin-left: auto;
   column-gap: 50px;
 }
 
+.header__contact {
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 .navigation__list,
 .header__contact {
   @media screen and (max-width: 767px) {
     display: none;
+  }
+}
+
+.contact__item {
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
   }
 }
 
@@ -71,8 +85,14 @@
 .contact__link {
   display: flex;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
+  @include desktop {
+    font-weight: 500;
+    line-height: 1.14;
+  }
+
   color: var(--main-contact-color);
   align-items: center;
 }
