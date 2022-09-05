@@ -179,14 +179,15 @@
   transition: border-color var(--duration) var(--cubic), box-shadow var(--duration) var(--cubic);
   cursor: pointer;
   width: 320px;
+  margin-bottom: 20px;
 
   @include mobile {
     width: 450px;
-    margin-bottom: 20px;
   }
 
   @include desktop {
     width: 100%;
+    margin-bottom: 0;
   }
 
   &:hover {
@@ -209,6 +210,7 @@
 .footer-form > .primary-btn {
   gap: 10px;
 }
+
 .third-btn {
   display: flex;
   align-items: center;
