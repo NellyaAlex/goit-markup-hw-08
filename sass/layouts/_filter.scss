@@ -69,7 +69,9 @@
 }
 
 .filter-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   &:hover,
   &:focus {
@@ -109,6 +111,7 @@
 
 .filter-wrap {
   padding: 20px 24px;
+  flex-grow: 1;
   border-right: 1px solid var(--second-border-color);
   border-bottom: 1px solid var(--second-border-color);
   border-left: 1px solid var(--second-border-color);
